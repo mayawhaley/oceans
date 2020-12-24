@@ -9,62 +9,41 @@ padding: 0;
     background: #0E5E76 url('vector.svg');
     background-repeat: no-repeat;
     background-position: right;
-    /* background-size: 1px; */
-    ;
-    background-size: 775px;
-   
+    background-size: 60%;
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
     display: flex;
-}
-
-/* .container {
-    /* box-sizing: border-box; */
-    /* background: #0E5E76 url('vector4.svg');
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
-    height: 100vh; */
-    /* display: flex; */
     
-
+}
 
 .main{
     display: flex;
-    /* justify-content: left; */
-    /* align-items: center; */
-    /* position: absolute; */
     margin: 40px;
     margin-top: 5%;
     width: 800px;
     height: 500px;
     padding: 10px;
-    /* background-color: red; */
 }
 #main-title{
     color: #EEF2D7;
-    font-size: 45px;
+    font-size: 3vw;
     font-weight: 300;
     position: relative;
     width: 400px;
     height: 100px;
     margin-top: 5%;
     
-    
 }
 
 #main-desc{
     color: #FEC3B1;
-    font-size: 35px;
-    display: inline-flex;
+    font-size: 2.5vw;
     position: absolute;
     text-align: left;
     margin-top: 15%;
     margin-right: 40%;
-    width: 500px;
-    height: 300px;
-    /* background-color: blue; */
-    
+    width: 40%;
+    height: 40%;
 }
 
 #main-desc a{
@@ -72,15 +51,16 @@ padding: 0;
 }
 
 .about-button{
-    position: absolute;
-    width: 150px;
-    height: 50px;
-    left: 1000px;
-    top: 44px;
-    font-size: 12pt;
     position: fixed;
-    margin-right: 70%;
+    width: 6%;
+    height: 5%;
+    left: 93%;
+    top: 3%;
+    font-size: 1vw;
+    position: fixed;
+    margin-right: 90%;
     background: #FEC3B1;
+    color: #0E5E76;
     border-radius: 40px;
     border: none;
     
@@ -93,6 +73,55 @@ box-shadow: 0px 12px 5px -8px rgba(0,0,0,0.2);
 
 .about-button:focus {
     outline: none;
-    box-shadow: none;
   }
 
+.sound-container{
+    display: flex;
+    position: fixed;
+    width: 25%;
+    height: 70%;
+    left: 65%;
+    top: 15%;
+    background: rgba(113, 177, 178, .2);
+    border-radius: 40px;
+    
+}
+
+.sound-title{
+    display: flex;
+    font-size: 3vw;
+    justify-content: center;
+    align-content: center;
+    padding: 8%;
+    padding-top: 15%;
+    opacity: 100%;
+    text-align: center;
+    width: 90%;
+    height: 25%;
+    color:#0E5E76;
+}
+
+.sound-desc{
+    font-size: 1.5vw;
+    color:#0E5E76;
+    width: 22%;
+    height: 30%;
+    margin-right: 25%;
+    padding: 2%;
+    margin-top: 12%;
+    position: fixed;
+    
+}
+
+.sound-icons{
+    display: inline-flex;
+    width: 10%;
+    height: 10%;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-top: 30%;
+    margin-left: 10%;
+    position: fixed;
+
+}
