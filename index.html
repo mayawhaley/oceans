@@ -14,7 +14,6 @@
 
 <body>
     <div class="container">
-
         <button class="about-button" href="#"> About</button>
 
         <div class="main">
@@ -38,15 +37,30 @@
                 <div class="sound-title">Morning Surf at Boracay,...</div>
                 <div class="sound-desc">Morning surf at Boracay, Philippines. Recorded June 20, 2007, with a Rode NT4
                     stereo microphone and a Sony HiMD portable ...</div>
+                <audio id="myAudio">
+                    <source src="https://freesound.org//data/previews/341/341854_6110723-lq.mp3" type="audio/mpeg">
+                    <source src="https://freesound.org//data/previews/341/341854_6110723-lq.ogg" type="audio/ogg">
+                    Your browser does not support the audio element.
+                </audio>
+
                 <div class="sound-icons">
-                    <img src="play.svg">
-                    <img src="forward.svg">
+                    <div id="pause"></div>
+                    <button onclick="togglePlay()" id="play"></button>
+
+                    <!-- <button id="next">
+                        <svg width="25" height="30" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.3125 0.75H18.875V23.25H17.3125V0.75ZM0.125 23.25V0.75L13.4062 12L0.125 23.25ZM1.6875 4.36816V19.6318L10.6963 12L1.6875 4.36816Z"
+                                fill="#0E5E76" />
+                        </svg>
+                     </button> -->
                 </div>
 
             </div>
         </div>
     </div>
-    <script src="scrapers.js"></script>
+    <script src="scrapers.js">
+    </script>
 </body>
 
 </html>
