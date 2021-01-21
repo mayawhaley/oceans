@@ -1,6 +1,7 @@
 //app.js
 
 var key = config.API_KEY;
+var isPlaying = false;
 
 const url = 'https://freesound.org/apiv2/search/text/?query=oceans&fields=name,description,download,duration,previews,url'
 
@@ -10,7 +11,6 @@ const headers = {
         Authorization: `Token ${key}`,
     }
 };
-
 
 function random() {
     const max = 14;
@@ -56,7 +56,11 @@ getData().then(data => {
         audioElement.innerHTML += `"<source src=${data.results[`${r}`].previews["preview-hq-ogg"]} type="audio/ogg">`
 
         audioElement.load();
-        audioElement.play();
+
+        if (isPlaying == true) {
+            audioElement.play();
+        }
+
 
 
     })
@@ -77,6 +81,7 @@ function togglePlay() {
     if (audioElement.paused) {
 
         audioElement.play();
+        isPlaying = true;
         playBtn.style.opacity = "0";
         pauseBtn.style.opacity = "100";
 
@@ -85,6 +90,7 @@ function togglePlay() {
     else {
 
         audioElement.pause();
+        isPlaying = false;
         playBtn.style.opacity = "100";
         pauseBtn.style.opacity = "0";
 
