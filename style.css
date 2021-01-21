@@ -268,7 +268,9 @@ font-family: 'Montserrat', sans-serif;
     }
 
     .sound-icons{
-        margin-top: 2%;
+        top: 70%;
+        background-color: white;
+        
     }
     #pause{
         width: 20%;
