@@ -238,7 +238,7 @@ font-family: 'Montserrat', sans-serif;
         display: flex;
         position: fixed;
         width: 40%;
-        height: 50%;
+        height: 55%;
         left: 55%;
         margin-top: 55%;
         background: rgba(113, 177, 178, .2);
@@ -257,15 +257,23 @@ font-family: 'Montserrat', sans-serif;
 
     #next{
         font-size: 3vw;
+        left: 70%;
     }
 
+    /* #play{
+        margin-top: 50%;
+    } */
+
+    .sound-icons{
+        margin-top: 2%;
+    }
     #pause{
         width: 20%;
     }
 
     #sound-desc{
         font-size: 3.5vw;
-        left: 62%;
+        left: 60%;
         margin-top: 25%;
         width: 30%;
     }
