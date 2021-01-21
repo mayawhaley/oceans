@@ -9,13 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script type='text/javascript' src='config.js'></script>
+    <script src="app.js"></script>
+
     <title>Oceans</title>
 </head>
 
 <body>
     <div class="container">
-        <button class="about-button" href="#"> About</button>
-
         <div class="main">
             <div id="main-title">
                 <h1>Oceans.</h1>
@@ -25,7 +26,12 @@
                     It’s been a long year. Enjoy the relaxing sound of the ocean.
                     <br>
                     <br>
-                    Inspired by <a href="https://www.tree.fm/">tree.fm.</a>
+                    Inspired by <a id="tree" href="https://www.tree.fm/">tree.fm.</a>
+                    <br>
+                    <br>
+                    Made by <a target="_blank" href="https://www.linkedin.com/in/maya-whaley">maya whaley</a>.
+                    <br>
+
                 </p>
             </div>
 
@@ -33,34 +39,22 @@
         </div>
 
         <div class="sound">
-            <div class="sound-container">
-                <div class="sound-title">Morning Surf at Boracay,...</div>
-                <div class="sound-desc">Morning surf at Boracay, Philippines. Recorded June 20, 2007, with a Rode NT4
-                    stereo microphone and a Sony HiMD portable ...</div>
+            <div class=" sound-container">
+                <div id="sound-title"></div>
+                <div id="sound-desc"></div>
+                <div id="sound-link"></div>
                 <audio id="myAudio">
-                    <source src="https://freesound.org//data/previews/341/341854_6110723-lq.mp3" type="audio/mpeg">
-                    <source src="https://freesound.org//data/previews/341/341854_6110723-lq.ogg" type="audio/ogg">
                     Your browser does not support the audio element.
                 </audio>
-
                 <div class="sound-icons">
                     <div id="pause"></div>
                     <button onclick="togglePlay()" id="play"></button>
-
-                    <!-- <button id="next">
-                        <svg width="25" height="30" viewBox="0 0 25 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M17.3125 0.75H18.875V23.25H17.3125V0.75ZM0.125 23.25V0.75L13.4062 12L0.125 23.25ZM1.6875 4.36816V19.6318L10.6963 12L1.6875 4.36816Z"
-                                fill="#0E5E76" />
-                        </svg>
-                     </button> -->
+                    <button id="next" label="Next"> Next </button>
                 </div>
 
             </div>
         </div>
     </div>
-    <script src="scrapers.js">
-    </script>
 </body>
 
 </html>
