@@ -9,6 +9,8 @@ font-family: 'Montserrat', sans-serif;
 .container{
     background: #0E5E76 url('static/vector.svg') no-repeat;
     background-position: right;
+    
+    
     background-size: contain;
     height: 100vh;
     width: 100vw;
@@ -19,11 +21,12 @@ font-family: 'Montserrat', sans-serif;
 
 .main{
     display: flex;
-    margin: 4%;
+    margin: 2%;
     margin-top: 5%;
     width: 40%;
     height: 60%;
     padding: 1%; 
+    /* background-color: wheat; */
 }
 #main-title{
     color: #EEF2D7;
@@ -64,6 +67,7 @@ font-family: 'Montserrat', sans-serif;
     
 }
 
+
 #sound-title{
     font-size: 3vw;
     justify-content: center;
@@ -100,6 +104,8 @@ font-family: 'Montserrat', sans-serif;
     -webkit-box-orient: vertical;
     /* background-color: white; */
 }
+
+
 
 #sound-link{
     width: 10%;
@@ -156,7 +162,7 @@ font-family: 'Montserrat', sans-serif;
 
 #play{
     display: inline-flex;
-    background: url("static/play.svg") no-repeat;
+    background:url("static/play.svg") no-repeat;
     outline: none;
     border: none;
     position: absolute;
@@ -164,8 +170,8 @@ font-family: 'Montserrat', sans-serif;
     justify-content: center;
     margin-bottom: 20%;
     margin-top: 10%;
-    width: 10%;
-    height: 50%;
+    width: 20%;
+    height: 60%;
     left: 45%;
     transition: .3s;
     
@@ -207,3 +213,64 @@ font-family: 'Montserrat', sans-serif;
 #next:focus {
     outline: none;
   }
+
+
+  @media only screen and (max-width: 700px){
+    .container{
+        background: #0E5E76 url('static/vector.svg') no-repeat;
+        display: flex;
+        position: fixed; 
+
+        background-size: cover;
+        height: 100vh;
+        width: 205vw;
+    }
+#main-title{
+    font-size: 5vw;
+}
+
+#main-desc{
+    font-size: 3.5vw;
+    width: 20%;
+    margin-top: 12%;
+}
+    .sound-container{
+        display: flex;
+        position: fixed;
+        width: 40%;
+        height: 50%;
+        left: 55%;
+        margin-top: 55%;
+        background: rgba(113, 177, 178, .2);
+        border-radius: 45px;
+        overflow: hidden;
+    }
+
+    #sound-link{
+        width: 20%;
+        margin-left: 8%;
+        margin-top: 45%;
+    }
+    #sound-link a{
+        font-size: 2vw;
+    }
+
+    #next{
+        font-size: 3vw;
+    }
+
+    #pause{
+        width: 20%;
+    }
+
+    #sound-desc{
+        font-size: 3.5vw;
+        left: 62%;
+        margin-top: 25%;
+        width: 30%;
+    }
+
+    #sound-title{
+        font-size: 5vw;
+    }
+}
