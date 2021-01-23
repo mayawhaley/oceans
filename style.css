@@ -220,7 +220,6 @@ font-family: 'Montserrat', sans-serif;
         background: #0E5E76 url('static/vector.svg') no-repeat;
         display: flex;
         position: fixed; 
-
         background-size: cover;
         height: 100vh;
         width: 205vw;
@@ -258,7 +257,7 @@ font-family: 'Montserrat', sans-serif;
 
     #next{
         font-size: 3vw;
-        left: 68%;
+        left: 70%;
     }
 
     #play{
@@ -269,7 +268,7 @@ font-family: 'Montserrat', sans-serif;
 
     .sound-icons{
         top: 70%;
-        background-color: white;
+        
         
     }
     #pause{
@@ -278,7 +277,7 @@ font-family: 'Montserrat', sans-serif;
 
     #sound-desc{
         font-size: 3.5vw;
-        left: 60%;
+        left: 65%;
         margin-top: 25%;
         width: 30%;
     }
