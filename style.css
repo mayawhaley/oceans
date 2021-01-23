@@ -275,7 +275,6 @@ font-family: 'Montserrat', sans-serif;
     #pause{
         width: 20%;
         height: 70%;
-        /* background-color: white; */
     }
 
     #sound-desc{
@@ -283,7 +282,6 @@ font-family: 'Montserrat', sans-serif;
         left: 60%;
         margin-top: 25%;
         width: 30%;
-        /* background-color: white; */
         padding: 0;
         text-align: center;
     }
