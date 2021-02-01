@@ -1,4 +1,3 @@
-/* style.css */
 * {
 margin: 0% ;
 padding: 0%;
@@ -26,8 +25,8 @@ font-family: 'Montserrat', sans-serif;
     width: 40%;
     height: 60%;
     padding: 1%; 
-    /* background-color: wheat; */
 }
+
 #main-title{
     color: #EEF2D7;
     font-size: 3vw;
@@ -53,7 +52,6 @@ font-family: 'Montserrat', sans-serif;
     color: #FEC3B1;
 }
 
-
 .sound-container{
     display: flex;
     position: fixed;
@@ -64,9 +62,7 @@ font-family: 'Montserrat', sans-serif;
     background: rgba(113, 177, 178, .2);
     border-radius: 45px;
     overflow: hidden;
-    
 }
-
 
 #sound-title{
     font-size: 3vw;
@@ -79,14 +75,11 @@ font-family: 'Montserrat', sans-serif;
     width: 90%;
     height: 15%;
     color:#0E5E76;
-
     text-overflow: ellipsis;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2; 
     -webkit-box-orient: vertical;
-
-    /* background-color: white; */
 }
 
 #sound-desc{
@@ -103,10 +96,7 @@ font-family: 'Montserrat', sans-serif;
     -webkit-line-clamp: 4; 
     -webkit-box-orient: vertical;
     text-align: center;
-    /* background-color: white; */
 }
-
-
 
 #sound-link{
     width: 10%;
@@ -116,15 +106,12 @@ font-family: 'Montserrat', sans-serif;
     margin-top: 25%;
     position: fixed;
     text-align: center;
-    /* background-color: white; */
 }
 
 #sound-link a{
     font-size: 1vw;
     color: #0E5E76;
-    /* position: fixed; */
 }
-
 
 .sound-icons{
     display: inline-flex;
@@ -136,9 +123,7 @@ font-family: 'Montserrat', sans-serif;
     top: 80%;
     bottom: 20%;
     position: absolute;
-
 }
-
 
 #pause{
     display: inline-flex;
@@ -156,10 +141,7 @@ font-family: 'Montserrat', sans-serif;
     left: 45%;
     transition: .3s;
     opacity: 0;
-  
  }
-
-
 
 #play{
     display: inline-flex;
@@ -175,7 +157,6 @@ font-family: 'Montserrat', sans-serif;
     height: 60%;
     left: 45%;
     transition: .3s;
-    
 }
 
 #play:hover{
@@ -184,8 +165,7 @@ font-family: 'Montserrat', sans-serif;
 
 #play:focus {
     outline: none;
-  }
-
+}
 
 #next{
     background: none;
@@ -216,7 +196,8 @@ font-family: 'Montserrat', sans-serif;
   }
 
 
-  @media only screen and (max-width: 850px){
+@media only screen and (max-width: 850px){
+
     .container{
         background: #0E5E76 url('static/vector.svg') no-repeat;
         display: flex;
